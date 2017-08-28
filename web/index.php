@@ -7,3 +7,5 @@
  */
 
 echo '<h1>Workshop</h1>';
+echo '<img src="static/img/rocket.jpg" alt="rocket" />';
+
