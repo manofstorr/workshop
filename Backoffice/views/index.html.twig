@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ asset('/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/microcms.css') }}" rel="stylesheet">
+    <title>B/O Workshop - Home</title>
+</head>
+<body>
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ asset('/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/overload.css') }}" rel="stylesheet">
+    <title>Workshop B/O</title>
+</head>
+<body>
+<div class="container">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="../../webplatform">Workshop/</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Back/O</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+    </ul>
+
+    <header>
+        <h1>Workshop B/O</h1>
+    </header>
+
+    <h3>Last logs</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>title</th>
+            <th>message</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for log in logs %}
+            <tr>
+                <td>{{ log.title }}</td>
+                <td>{{ log.message }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <footer class="footer">
+
+    </footer>
+</div>
+</body>
+</html>
